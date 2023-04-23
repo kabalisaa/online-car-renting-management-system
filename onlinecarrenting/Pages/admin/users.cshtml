@@ -1,0 +1,112 @@
+﻿@page
+@model onlinecarrenting.Pages.admin.usersModel
+@{
+}
+<div class="wrapper d-flex align-items-stretch">
+    <nav class="bg-dark" id="sidebar">
+        <div class="custom-menu">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <div class="p-4">
+
+            <ul class="list-unstyled components mb-5">
+                <h1><a class="logo">Admin</a> </h1>
+                <li class="active">
+                    <a href="/admin/dashboard"><span class="fa fa-home mr-3"></span> Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="/admin/users"><span class="fa fa-briefcase mr-3"></span> users</a>
+                </li>
+                <li>
+                    <a href="profile.xhtml"><span class="fa fa-sticky-note mr-3"></span>Profile </a>
+                </li>
+                <li>
+                    <a href="/carrental/index.xhtml"><span class="fa fa-suitcase mr-3"></span> Log out</a>
+                </li>
+            </ul>
+            <div class="footer">
+                <p>  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  </p>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">List Of Recorded car</h2>
+        <button class="btn btn-dark p-1" data-bs-toggle="modal" data-bs-target="#addcar">Add Car</button>
+        <div class="row col-sm-12">
+            <div class="col-sm-12 row border border-dark p-2 rounded row">
+            @foreach (var user in @Model.userlist())
+            {
+                
+                     
+                    <div class="col-sm-4">
+                        <p class="fw-bolder">Detail</p>
+                        <nav>Name:@user.Name</nav>
+                        <nav>Gender:@user.Gender</nav>
+                        <nav>Phone Number:@user.Phone</nav>
+                        <nav>Email:@user.Email</nav>
+                    </div>
+                    <div class="col-sm-4 text-center m-auto">
+
+                        <form class="text-center">
+                            <input type="hidden" value="getcar" />
+                            <button class="btn btn-dark p-1" data-bs-toggle="modal" data-bs-target="#addcar">Delete</button>
+                        </form>
+                    </div>
+                  
+                }
+            </div>
+        </div>
+        <div class="modal fade" id="addcar" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+                @*<div class="modal-body">
+                    <div id="carouselId" class="carousel slide bg-dark" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img height="110" src="data:image/png;base64,@Model.car.Bas64img1" />
+                            </div>
+                            <div class="carousel-item">
+                                <img height="110" src="data:image/png;base64,@Model.car.Bas64img2" />
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div>
+                        @Model.car.Platenumber
+                    </div>
+
+                </div>*@
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Page Content  -->
+
+    </div>
+
+</div>

@@ -1,0 +1,8 @@
+C:\Users\Eng Michael\Desktop\Assignment\onlinecarrenting\onlinecarrenting\obj\Release\net6.0\onlinecarrenting.csproj.AssemblyReference.cache
+C:\Users\Eng Michael\Desktop\Assignment\onlinecarrenting\onlinecarrenting\obj\Release\net6.0\onlinecarrenting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eng Michael\Desktop\Assignment\onlinecarrenting\onlinecarrenting\obj\Release\net6.0\onlinecarrenting.AssemblyInfoInputs.cache
+C:\Users\Eng Michael\Desktop\Assignment\onlinecarrenting\onlinecarrenting\obj\Release\net6.0\onlinecarrenting.AssemblyInfo.cs
+C:\Users\Eng Michael\Desktop\Assignment\onlinecarrenting\onlinecarrenting\obj\Release\net6.0\onlinecarrenting.csproj.CoreCompileInputs.cache
+C:\Users\Eng Michael\Desktop\Assignment\onlinecarrenting\onlinecarrenting\obj\Release\net6.0\onlinecarrenting.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Eng Michael\Desktop\Assignment\onlinecarrenting\onlinecarrenting\obj\Release\net6.0\onlinecarrenting.RazorAssemblyInfo.cache
+C:\Users\Eng Michael\Desktop\Assignment\onlinecarrenting\onlinecarrenting\obj\Release\net6.0\onlinecarrenting.RazorAssemblyInfo.cs
